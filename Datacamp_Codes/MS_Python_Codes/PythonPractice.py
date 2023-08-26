@@ -58,3 +58,16 @@ print("""Both sides of the %s get the same amount of sunlight, but only one side
 subject = "interesting facts about the moon"
 heading = f"{subject.title()}"
 print(heading)
+
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
+planets.pop()  # Goodbye, Pluto
+number_of_planets = len(planets)
+print("No, there are definitely", number_of_planets, "planets in the solar system.")
+
+user_input = ''
+inputs = []
+
+while user_input.lower() != 'done':
+    if user_input:
+        inputs.append(user_input)
+    user_input = input('Enter a new value, or done when done : ')
